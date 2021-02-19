@@ -16,8 +16,8 @@ class Aplicacion:
 		self.entry1.grid(column=1, row=2)
 		self.boton1=tk.Button(self.ventana1, text="Cerrar", command=self.cerrar)
 		self.boton1.grid(column=0, row=3)
-		self.boton2=tk.Button(self.ventana1, text="Voz", command=self.Voz) 
-		self.boton2.grid(column=1, row=3)
+		self.boton3=tk.Button(self.ventana1, text="Voz", command=self.Voz) 
+		self.boton3.grid(column=1, row=3)
 		self.ventana1.resizable(False, False)
 		self.ventana1.mainloop()
 	
@@ -28,6 +28,8 @@ class Aplicacion:
 		engine.say("Usted digito el numero" + self.numero.get())
 		engine.runAndWait()
 		engine.stop()
+		
+		
 		
 	def cerrar(self):
         	sys.exit(0)
