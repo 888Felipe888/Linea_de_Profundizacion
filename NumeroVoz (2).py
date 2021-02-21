@@ -20,6 +20,7 @@ class Aplicacion:
 		self.boton3.grid(column=1, row=3)
 		self.ventana1.resizable(False, False)
 		self.ventana1.mainloop()
+		#Esta es la segunda modificacion
 	
 	def Voz(self):
 		engine = pyttsx3.init()
