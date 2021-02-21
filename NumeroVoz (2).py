@@ -21,6 +21,7 @@ class Aplicacion:
 		self.ventana1.resizable(False, False)
 		self.ventana1.mainloop()
 		#Esta es una modificacion
+		#Esta es la segunda modificacion
 	
 	def Voz(self):
 		engine = pyttsx3.init()
